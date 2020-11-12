@@ -1,0 +1,51 @@
+       
+        .body { margin: 0px; font-family: Droid Sans, sans-serif; font-size: 13px; line-height: 22px;}
+                
+          .header {
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align: right;
+            background-color: none;
+            color: white;
+            font-size: 17px; }
+
+          #navbar a {
+            float: left;
+            vertical-align: right;
+	          margin-top: 26px; }
+
+          .navbar { overflow: hidden; background-color: #555555 }
+                  
+          .navbar-nav a { 
+            float: right;
+            color: white;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 13px;
+            display: inline; }
+         
+          ul {
+            display: inline;
+            list-style: none; }
+
+          li {
+            display: inline;
+            padding: 20px;
+            margin-left: -5px; }
+
+          a {text-decoration: none; }
+                         
+          .navbar a:hover { background-color: darkgrey; color: white;  }
+                  
+          .footer { overflow: hidden; background-color: #746f6f }
+
+          .footer {
+            padding: 10px;
+            text-align: left;
+            background-color: #746f6f;
+            color: white;
+            font-size: 13px;
+                        }
+          
