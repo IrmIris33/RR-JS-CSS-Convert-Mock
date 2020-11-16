@@ -1,51 +1,197 @@
-       
-        .body { margin: 0px; font-family: Droid Sans, sans-serif; font-size: 13px; line-height: 22px;}
-                
-          .header {
-            max-width: 100%;
-            margin: 0px;
-            padding: 0px;
-            text-align: right;
-            background-color: none;
-            color: white;
-            font-size: 17px; }
+  .body { margin: 0px; font-family: Droid Sans, sans-serif; font-size: 13px; line-height: 22px;}
+  
+    * {box-sizing: border-box;}
+   
+      /* Style inputs for header and navbar */            
+    .header {
+      color:#D4D4D4;
+      background-color: rgb(58,61,64);
+      width: 965px;
+      height: 10px;
+      padding: 50px 270px 33px 265px;
+      margin: 0px;
+      text-align: right;
+      font-size: 17px; 
+    }
+            
+    #navbar a {
+      float: left;
+      vertical-align: right;
+      margin-top: 26px; }
 
-          #navbar a {
-            float: left;
-            vertical-align: right;
-	          margin-top: 26px; }
+    .navbar { overflow: hidden; background-color: #555555 }
+            
+    .navbar-nav a { 
+      float: right;
+      color: white;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 13px;
+      display: inline; }
+    
+    .a {text-decoration: none; }
+                    
+    .navbar a:hover { background-color: darkgrey; color: white;  }
 
-          .navbar { overflow: hidden; background-color: #555555 }
-                  
-          .navbar-nav a { 
-            float: right;
-            color: white;
-            text-align: right;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 13px;
-            display: inline; }
+    /* Style inputs for Main Content Area */
+
+
+
+
+    .hr {
+      display: block;
+      unicode-bidi: isolate;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      overflow: hidden;
+    }
+
+    /* Style the submit button with a specific background color etc */       
+    .button {
+      background-color: linear-gradient(rgb(153, 199, 228), rgb(111, 153, 180));
+      border: none;
+      color: white;
+      padding: 32px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 11px;
+      margin: 4px 2px;
+    }
+ 
+    .footer { overflow: hidden; background-color: #746f6f }
+
+    .footer {
+      padding: 10px;
+      text-align: left;
+      background-color: #746f6f;
+      color: white;
+      font-size: 13px;
+    } 
+
+    .footer header {
+      font-family: droid sans, sans-serif;
+      font-size: 10px;
+      box-sizing: 217px, 139px;
+    }
+            
+    /* CONTACT FORM */
+    /* Style inputs with type="text", select elements and textareas */
+    .input text {
+      width: 219px;
+      height: 33px; 
+      padding: 9px; 
+      border: none;  
+      border-radius: 4px; 
+      margin-top: 10px; 
+      margin-bottom: 16px; 
+      resize: vertical 
+    }
+  
+    .input textarea {
+      width: 219px;
+      height: 139px;
+      font-size: 13px;
+      font-family: 'droid sans', sans-serif;
+      padding: 9px; 
+      border: none;  
+      border-radius: 4px; 
+      margin-top: 10px; 
+      margin-bottom: 16px; 
+      resize: vertical 
+    }
+    
+    ul {
+      display: inline;
+      list-style: none; }
+  
+    li {
+      display: inline;
+      padding: 20px;
+      margin-left: -5px; }
+   
+
+    /* Add a background color and some padding around the form */
+    .form-container {
+      display: block;
+      border-radius: 5px;
+      background-color:rgb(39,41,43);
+     } 
+
+    /* COPYRIGHT AND SOCIAL MEDIA BUTTONS */
+
+    .copyright {
+      float: left;
+      max-width: 500px;
+    }
+    
+    .copyright p {
+      padding: 3px 0 0 0;
+    }
+    
+    .social-container {
+      padding: 0;
+      margin-bottom: 4px;
+      float: right;
+    }
          
-          ul {
-            display: inline;
-            list-style: none; }
+    .social a {
+      height:24px;
+      width:24px;
+      display:block;
+      position:relative;
+    }
+    
+    .social-share a:hover span{ 
+      overflow:visible; 
+      width: 110px;
+    }
+    
+    .social .rss {
+      background-position:0 0;
+    }
+    
+    .social .facebook {
+      background-position:0 -24px;
+    }
+    
+    .social .twitter {
+      background-position:0 -48px;
+    }
+    
+    .social .dribbble {
+      background-position:0 -72px;
+    }
+    
+    .social .pinterest {
+      background-position:0 -96px;
+    }
+    
+    .social .linkedin {
+      background-position:0 -120px;
+    }
+    
+      
+     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;   }  }   
+   
 
-          li {
-            display: inline;
-            padding: 20px;
-            margin-left: -5px; }
+                           
+            
+                    
+            
+  
+            
+        
+     
+    
+          
 
-          a {text-decoration: none; }
-                         
-          .navbar a:hover { background-color: darkgrey; color: white;  }
-                  
-          .footer { overflow: hidden; background-color: #746f6f }
-
-          .footer {
-            padding: 10px;
-            text-align: left;
-            background-color: #746f6f;
-            color: white;
-            font-size: 13px;
-                        }
+    
+    
           
