@@ -1,4 +1,4 @@
-  .body { margin: 0px; font-family: Droid Sans, sans-serif; font-size: 13px; line-height: 22px;}
+  .body { margin: 0px; font-family: Droid Sans, Arial, sans-serif; font-size: 13px; line-height: 22px;}
   
     * {box-sizing: border-box;}
    
@@ -36,9 +36,6 @@
 
     /* Style inputs for Main Content Area */
 
-
-
-
     .hr {
       display: block;
       unicode-bidi: isolate;
@@ -49,18 +46,26 @@
       overflow: hidden;
     }
 
-    /* Style the submit button with a specific background color etc */       
-    .button {
+    /* Style the submit button with a specific background color etc */ 
+
+   .button {
       background-color: linear-gradient(rgb(153, 199, 228), rgb(111, 153, 180));
       border: none;
       color: white;
-      padding: 32px 32px;
+      padding: 0px 20px;
       text-align: center;
       text-decoration: none;
-      font-size: 11px;
+      font-size: 10px;
       margin: 4px 2px;
-    }
+    } 
+  
+    .fas fa-comments {
+      float: right;     } 
  
+    .span {
+      float: right;     }
+
+
     .footer { overflow: hidden; background-color: #746f6f }
 
     .footer {
@@ -111,6 +116,8 @@
       display: inline;
       padding: 20px;
       margin-left: -5px; }
+
+ 
    
 
     /* Add a background color and some padding around the form */
@@ -131,49 +138,13 @@
       padding: 3px 0 0 0;
     }
     
-    .social-container {
+    .social {
       padding: 0;
       margin-bottom: 4px;
       float: right;
-    }
-         
-    .social a {
-      height:24px;
-      width:24px;
-      display:block;
-      position:relative;
-    }
+    } 
     
-    .social-share a:hover span{ 
-      overflow:visible; 
-      width: 110px;
-    }
-    
-    .social .rss {
-      background-position:0 0;
-    }
-    
-    .social .facebook {
-      background-position:0 -24px;
-    }
-    
-    .social .twitter {
-      background-position:0 -48px;
-    }
-    
-    .social .dribbble {
-      background-position:0 -72px;
-    }
-    
-    .social .pinterest {
-      background-position:0 -96px;
-    }
-    
-    .social .linkedin {
-      background-position:0 -120px;
-    }
-    
-      
+       
      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
       .leftcolumn, .rightcolumn {   

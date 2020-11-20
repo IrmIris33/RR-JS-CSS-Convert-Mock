@@ -3,43 +3,11 @@
 	* {box-sizing: border-box;}
 
 	.body { 
-		margin: 50px 45px; 
-		font-family: Droid Sans, sans-serif; 
+		margin: 100px; 
+		font-family: Droid Sans, Arial, sans-serif; 
 		font-size: 13px; 
 		line-height: 1px;
 		display: block;	}  
-					
-	.container-main {
-		margin: 0px;
-		width: 1500px;}
-
-	.clear {
-		clear:both;
-		display:block;
-		overflow:hidden;
-		visibility:hidden;
-		width:0;
-		height:0	}
-
-	.clearfix:after {
-		clear:both;
-		content:' ';
-		display:block;
-		font-size:0;
-		line-height:0;
-		visibility:hidden;
-		width:0;
-		height:0	}
-
-	.clearfix {
-		display:inline-block	}
-
-	* html .clearfix {
-		height:1%	}
-
-	.clearfix {
-		display:block	}	
-	
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
@@ -47,6 +15,11 @@
           width: 100%;
           padding: 0;   }  }   
    
+	.container-main {
+		margin: 0px;
+		width: 1500px;}
+
+
 /* ---- HEADER ----*/
 
     /* Style inputs for header and navbar */            
@@ -99,12 +72,19 @@
 
 /* MAIN POST */
   
-  /* Create four equal columns that floats next to each other */
+	/* Create four equal columns that floats next to each other */
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* Create three equal columns that floats next to each other */
 	.column {
 		float: left;
-		width: 75%;
-		padding: 10px; }
-  		  
+		width: 33.33%;
+		padding: 10px;
+		height: 300px; /* Should be removed. Only for demonstration */
+	}
+	
 	/* Clear floats after the columns */
 	.row:after {
 		content: "";
@@ -565,7 +545,7 @@
 /*SIDE BAR */
 
 	.sidebar {
-		background: transparent url(style/images/sep.png) repeat-y left top;
+		background: transparent repeat-y left top;
 		padding-left: 30px;
 		margin-left: 30px;
 		width: 290px;
@@ -575,7 +555,7 @@
 	.sidebox {
 		margin-top: 20px;
 		padding-top: 40px;
-		background: transparent url(style/images/line.png) center top repeat-x; } 
+		background: transparent center top repeat-x; } 
 
 	.sidebox:first-child {
 		background: none;
@@ -661,7 +641,7 @@
 	#comments {
 		margin:50px 0 0 0;
 		padding-bottom: 40px;
-		background: transparent url(style/images/line.png) center bottom repeat-x; }
+		background: transparent  center bottom repeat-x; }
 
 	#comments ol.commentlist {
 		list-style:none;
@@ -769,63 +749,5 @@
 		float: right;
 	}
 	
-	.social.team {
-		float: none;
-		margin-bottom: 20px;
-	}
-	
-	.social li {
-		float: left;
-		padding: 0;
-		margin-left: 5px;
-		background: none;
-	}
-	
-	.social.team li {
-		margin: 0;
-		margin-right: 5px;
-	}
-	
-	.social a {
-		background: none;
-		height:24px;
-		width:24px;
-		display:block;
-		position:relative;
-	}
-	
-	.social-share a:hover span{ 
-		overflow:visible; 
-		width: 110px;
-	}
-	
-	.social .rss {
-		background-position:0 0;
-	}
-	
-	.social .facebook {
-		background-position:0 -24px;
-	}
-	
-	.social .twitter {
-		background-position:0 -48px;
-	}
-	
-	.social .dribbble {
-		background-position:0 -72px;
-	}
-	
-	.social .pinterest {
-		background-position:0 -96px;
-	}
-	
-	.social .linkedin {
-		background-position:0 -120px;
-	}
-
-    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 800px) {
-		.leftcolumn, .rightcolumn {   
-			width: 100%;
-			padding: 0;   }  }      
+   
     
