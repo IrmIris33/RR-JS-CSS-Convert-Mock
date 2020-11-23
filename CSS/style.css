@@ -48,17 +48,21 @@
 
     /* Style the submit button with a specific background color etc */ 
 
-   .button {
+   .blog-button {
       background-color: linear-gradient(rgb(153, 199, 228), rgb(111, 153, 180));
       border: none;
       color: white;
       padding: 0px 20px;
       text-align: center;
       text-decoration: none;
-      font-size: 10px;
-      margin: 4px 2px;
-    } 
-  
+      cursor: auto;
+      font-size: 20px;
+      outline: none;
+      height: 31px;
+      width: 112px; 
+      border-radius: 10px;
+       }
+                       
     .fas fa-comments {
       float: right;     } 
  

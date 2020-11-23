@@ -15,12 +15,7 @@
           width: 100%;
           padding: 0;   }  }   
    
-	.container-main {
-		margin: 0px;
-		width: 1500px;}
-
-
-/* ---- HEADER ----*/
+	/* ---- HEADER ----*/
 
     /* Style inputs for header and navbar */            
 	
@@ -70,85 +65,42 @@
                     
     .navbar a:hover { background-color: darkgrey; color: white;  }
 
-/* MAIN POST */
-  
-	/* Create four equal columns that floats next to each other */
-	* {
-		box-sizing: border-box;
-	}
-	
-	/* Create three equal columns that floats next to each other */
-	.column {
+/* MAIN CONTENT */
+  			
+	.post-container {
+		width: 85%;
+		margin: 50px auto 50px;		}
+
+	.post-container .main-content {
+		width: 70%;
 		float: left;
-		width: 33.33%;
-		padding: 10px;
-		height: 300px; /* Should be removed. Only for demonstration */
-	}
-	
-	/* Clear floats after the columns */
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	
+		padding-right: 10px;	}
+
+	.post-container .main-content .post {
+		width: 95%;
+		height: 270px;
+		margin: 10px auto;
+		text-decoration: none;	}
+
+	.post-container .main-content .post .post-image {
+		widows: 40%;
+		height: 100%;	}
+
+	.post-container .main-content .recent-post-title {
+		margin: 20px;
+		text-decoration: none;	}
+
+	.post-container .main-content .sidebar {
+		width: 30%;
+		float: right;
+		height: 300px;	}
+
+		
 	/* Fake image */
 	.fakeimg {
 		background-color: #aaa;
 		width: 100%;
-		padding: 20px;
-	}
-	
-	/* Add a card effect for articles */
-	.card {
-		background-color: white;
-		padding: 20px;
-		margin-top: 20px;
-	}
-	
-	
-	.h1, h2, h3, h4, h5, h6 {
-		font-family: 'Ubuntu', sans-serif;
-		font-weight: bold;
-		color: #555555;
-		margin-bottom: 20px; }
-
-	.h1 {
-		font-size: 30px;
-		line-height: 28px;	}
-
-	.h2 {
-		font-size: 22px;
-		line-height: 24px;	}
-
-	.h3 {
-		font-size: 20px;
-		line-height: 22px;	}
-
-	.h4 {
-		font-size: 18px;
-		line-height: 20px;	}
-
-	.h5 {
-		font-size: 16px;
-		line-height: 20px;
-		margin-bottom:10px;	}
-
-	.h6 {
-		font-size: 14px;
-		line-height: 18px;	}
-
-	.h5 span {
-		font-family: 'Droid Serif', serif;
-		font-weight: normal;
-		font-style: italic;
-		font-size: 13px;
-		color: #999;
-		padding-left: 5px;	}
-
-	.h5 span:before {
-		content: '-';
-		padding-right: 5px;	}
+		padding: 20px;	}
 
 	
 /* ---- DIVIDER ----*/
@@ -159,12 +111,12 @@
 		margin-top: 30px;
 		margin-bottom: 50px; }
 
-/* -- 	POST INFO */
 /* ---- IMAGE ----*/
-	img {
-		width: 640px;
-		height: 269px;
-		display: block;	}
+	.img {
+		float: left;
+		width: 159px;
+		height: 150px;
+		padding: 4px 19px 35px 17px;   	}
 
 	#fancybox-thumbs ul li img {
 		max-width: none;	}
@@ -197,241 +149,11 @@
 		margin-bottom: -40px;
 		margin-right: -40px;	}
 	
-	.latest-blog li {
-		float: left;
-		width: 460px;
-		margin: 0 40px 40px 0;
-		background: none;
-		padding: 0;	}
-	
-	.latest-blog li h2 {
-		margin-bottom: 5px;
-		font-size: 17px;	}
-	
-	.latest-blog li h2 a {
-		color: #555555;	}
-	
-	.latest-blog li h2 a:hover {
-		color: #6b99b6;	}
-	
-	.latest-blog:after {
-		content: '';
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;	}
-	
-	.latest-blog li .date {
-		font-family: 'Ubuntu', sans-serif;
-		font-weight: bold;
-		text-align: center;
-		display: block;
-		float: left;
-		background-color: #ececec;
-		width: 54px;
-		height: 44px;
-		margin-right: 15px;
-		border-radius: 54px; 
-		padding: 10px 0 0 0;
-		line-height: 1;	}
-	
-	.latest-blog li .day {
-		font-size: 20px;
-		display: block;	}
-	
-	.latest-blog li .month {
-		font-size: 11px;
-		display: block;
-		text-transform: uppercase;	}
-	
-	.latest-blog li .text {
-		overflow: hidden;	}
-	
-	.latest-blog li .text p {
-		padding: 0 0 10px 0;	}
-	
-	.latest-blog li .meta {
-		overflow: hidden;
-		font-size: 11px;	}
-	
-	.latest-blog li .meta .tags {
-		display: inline;	}
-	
-	.latest-blog li .meta .comments {
-		display: inline;	}
-	
-	.posts-grid {
-		width: 110%;
-		margin-bottom: 21px;
-		margin-right: -21px;
-		overflow: inherit !important;	} 
-	
-	.posts-grid .post {
-		float: left;
-		margin: 0 21px 21px 0;
-		position: relative;
-		width: 306px;
-		background: #f7f7f7;
-		padding:20px 20px 12px 20px;
-		border: 1px solid #e3e3e3;
-		box-sizing: border-box; 	} 
-	
-	.posts-grid .post .featured {
-		margin: -21px -21px 15px;
-		display: block; 	} 
-	
-	.featured a {
-		position: relative;
-		display: block; 	} 
-	
-	.featured a .more{
-		position: absolute;
-		background: transparent url(style/images/icon-more.png) no-repeat center center;	} 
-	
-	.posts-list .featured a .more,
-	.related .featured a .more {
-		position: absolute;
-		background: transparent url(style/images/icon-more2.png) no-repeat center center;	} 
-	
-	.featured a span.overlay.more {
-		display: none;
-		height: 100%;
-		position: absolute;
-		text-align: center;
-		text-decoration: none;
-		width: 100%;
-		z-index: 100;
-		background-color: rgba(0, 0, 0, 0.55);	}
-	
-	.featured a img {
-		max-width: 100%;
-		display: block;
-		position: relative;	} 
-	
-	.posts-grid:after {
-		content: '';
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;	}
-	
-	.posts-grid .excerpt h2 {
-		font-size: 15px;
-		margin: 0 0 8px 0;	}
-	
-	.posts-grid .excerpt h2 a {
-		color: #555555;	}
-	
-	.posts-grid .excerpt h2 a:hover {
-		color: #6b99b6;	}
-	
-	.posts-grid .meta {
-		background: transparent url(style/images/line.png) repeat-x center top;
-		overflow: hidden;
-		margin-top: -4px;
-		padding: 15px 0 0 0;
-		font-size: 11px;	}
-	
-	.posts-grid .meta .date {
-		float: left;
-		background: transparent url(style/images/icon-date.png) no-repeat left center;
-		padding: 0 0 0 17px;	}	
-
-	.posts-grid .meta .comment {
-		float: right;
-		background: transparent url(style/images/icon-comment.png) no-repeat left center;
-		padding: 0 0 0 18px;	}
-
-	.post-container {
-		width: 440px;
-		box-sizing: border-box;       
-		float: none; }
-
-	.post-container .post .post-info {
-		margin-bottom: 20px;	}
-
-	.post-container .post .post-info:after {
-		content: '';
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;	}
-
-	.post-container .post .post-info .date {
-		font-family: 'Ubuntu', sans-serif;
-		font-weight: bold;
-		text-align: center;
-		display: block;
-		float: left;
-		background-color: #ececec;
-		width: 70px;
-		height: 56px;
-		margin-right: 15px;
-		border-radius: 54px; 
-		padding: 14px 0 0 0;
-		line-height: 1;	}
-
-	.post-container .post .post-info .date .day {
-		font-size: 25px;
-		display: block;	}
-
-	.post-container .post .post-info .date .month {
-		font-size: 14px;
-		display: block;
-		text-transform: uppercase;	}
-
-	.post-container .post .post-info .title-meta {
-		overflow: hidden;
-		font-size: 11px;	}
-
-	.post-container .post .post-info .title-meta .post-title {
-		font-size: 18px;
-		padding-bottom: 11px;
-		margin-bottom: 8px;
-		background: transparent url(/index.html/images/dotteddivider.png) repeat-x center bottom;	}
-	
-	.post-container .post .post-info .title-meta .post-title a {
-		color: #555555;	}
-	
-	.post-container .post .post-info .title-meta .post-title a:hover {
-		color: #6b99b6;	}
-	
-	.post-container .post {
-		margin-bottom: 50px;	}
-	
-	.post-container .post .featured {
-		margin-bottom: 20px;	}
-	
-
 /* RELATED POSTS */
-
 	.post-container .related {
 		margin-top: 50px;
-		background: transparent url(style/images/line.png) repeat-x center bottom;
 		padding-bottom: 35px;	}
-	
-	.post-container .related ul {
-		width: 652px;
-		margin-right: -12px;	}
-	
-	.post-container .related ul:after {
-		content: '';
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;	}
-	
-	.post-container .related ul li {
-		float: left;
-		margin-right: 12px;
-		padding: 0;
-		background: none;	}
-	
-	.post-container .related ul li img {
-		width: 151px;
-		height: 110px;
-		display: block;	}	
-
+			
 /* FORM */
 
 	.forms {
@@ -540,7 +262,6 @@
 		height: 0;
 		clear: both;
 		visibility: hidden;		}
-
 		
 /*SIDE BAR */
 
@@ -635,62 +356,61 @@
 	.searchform input:focus {
 		border: 1px solid #c5c5c5;	}
 
-
 /*	COMMENTS */
 
-	#comments {
-		margin:50px 0 0 0;
+	.comments {
+		margin: 50px 0 0 0;
 		padding-bottom: 40px;
 		background: transparent  center bottom repeat-x; }
 
-	#comments ol.commentlist {
+	.comments ol.commentlist {
 		list-style:none;
 		margin: -5px 0 0 0; }
 
-	#comments ol.commentlist li {
+	.comments ol.commentlist li {
 		padding:20px 0 0 0;
 		background: none; }
 
-	#comments .user {
+	.comments .user {
 		float:left;
 		width: 70px;
 		height: 70px;
 		margin-right:20px; }
 
-	#comments .message {
+	.comments .message {
 		overflow: hidden;
 		padding:15px 20px 0 20px;
 		background: #f7f7f7;
 		border: 1px solid #e3e3e3;
 		position: relative;
 	}
-	#comments ul.children {
+	.comments ul.children {
 		margin:0;
 		overflow: inherit;
 		padding:0 0 0 40px;
 	}
-	#comments ol.commentlist ul.children li {
+	.comments ol.commentlist ul.children li {
 		padding-right:0;
 		border:none;
 	}
-	#comments .info h2 {
+	.comments .info h2 {
 		font-size: 14px;
 		margin: 0;
 	}
-	#comments .info {
+	.comments .info {
 		margin-bottom: 12px;
 	}
-	#comments .info h2 a {
+	.comments .info h2 a {
 		color: #555555;
 	}
-	#comments .info .meta {
+	.comments .info .meta {
 		font-size: 11px;
 		color: #999999;
 	}
-	#comments .info a:hover {
+	.comments .info a:hover {
 		color: #6b99b6;
 	}
-	#comments a.reply-link {
+	.comments a.reply-link {
 		position: absolute;
 		right: 20px;
 		top: 20px;
@@ -701,8 +421,6 @@
 	.comment-form-wrapper {
 		margin-top: 50px;
 	}
-
- 
  
 /* FOOTER */
 
@@ -722,7 +440,7 @@
       box-sizing: 217px, 139px;
     }
 			
-	ul {
+	.ul {
 		display: inline;
 		list-style: none; }
 
